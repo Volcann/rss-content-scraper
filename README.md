@@ -95,7 +95,11 @@ Content:
 
 --------------------------------------------------------------------------------
 ```
+
+![RSS scraper screenshot](https://raw.githubusercontent.com/Volcann/rss-content-scraper/33e8d7cb997214ab03725be0bf662c894a612ec3/Screenshot%20from%202025-08-12%2012-06-18.png)
+
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%">
+
 ## Tips & notes
 
 * The script extracts content from `div.article__text` first, then falls back to the first `<article>` tag. Many sites use different classes or HTML structures, so extraction may fail for some publishers. If the output says `Could not extract article content.`, inspect the target page and adjust `content_div = soup.find(...)` to a selector that matches that site.
